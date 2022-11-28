@@ -30,7 +30,7 @@ const Card = ({cardProps}) => {
     ]
 })
   return (
-    <div className={'rounded-[15px] flex-1 h-[498px] px-[33px] py-[40px] flex flex-col '+ (cardProps.isSelected ? "bg-active-color text-white ": "bg-white text-menu-color")}>
+    <div className={'rounded-[15px] flex-1  px-[33px] py-[40px] flex flex-col '+ (cardProps.isSelected ? "bg-active-color text-white ": "bg-white text-menu-color")}>
      
       <div className='flex justify-between items-center text-[24px]  leading-[32px]'>
         <span>{cardProps.title}</span>

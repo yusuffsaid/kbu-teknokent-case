@@ -1,7 +1,7 @@
 import React from 'react'
 const Badge = ({badge}) => {
   return (
-    <div className='w-1/3 flex items-center justify-center py-[13px]'>
+    <div className='w-1/3 max-sm:w-full max-lg:w-1/2 flex items-center justify-center py-[13px] shrink'>
         {/* Renkler gelmiyor en son buna bakılacak */}
             <i className={"bg-["+badge.color+"]  p-[12px] rounded-full bg-opacity-40 text-2xl "+badge.icon}></i>
             <div className='flex flex-col ml-[37px]'>

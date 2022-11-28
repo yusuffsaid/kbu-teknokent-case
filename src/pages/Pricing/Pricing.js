@@ -41,11 +41,11 @@ const Pricing = () => {
   return (
    <div className=''>
    <PageHeader title='Pricing Plans' text="We are an industry-leading company that values honesty, integrity, and efficiency. Building quality products and caring."></PageHeader>
-   <section className='price-area flex max-lg:flex-col justify-between px-[150px] bg-header-color gap-x-[23px]'>
+   <section className='price-area flex max-lg:flex-col justify-between px-[150px] max-sm:px-[20px] bg-header-color gap-x-[23px] max-lg:gap-y-[23px]'>
     {cardProps.map((prop,i)=><Card key={i} cardProps={prop}></Card>)}
     
    </section>
-   <section className='flex px-[150px] flex-wrap gap-y-[20px] mt-[120px] '>
+   <section className='flex max-sm:flex-col max-lg:px-[20px] px-[150px] flex-wrap gap-y-[20px] mt-[120px] '>
    {badges.map((badge,i)=><Badge key={i} badge={badge}></Badge>)}
    </section>
    </div>

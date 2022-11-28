@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='pt-[118px] px-[150px] pb-[50px] flex justify-between items-start'>
-        <div className='sec-1 basis-3/6'>
+    <div className='pt-[118px] px-[150px] pb-[50px] flex justify-between items-start max-lg:flex-col max-lg:px-[20px]  max-lg:items-center'>
+        <div className='sec-1 w-2/4 max-lg:w-full'>
         <svg width="80" height="19" viewBox="0 0 80 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11.2983 0.545471H14.9886V11.8807C14.9886 13.1534 14.6846 14.2671 14.0767 15.2216C13.4744 16.1762 12.6307 16.9205 11.5454 17.4546C10.4602 17.983 9.19601 18.2472 7.75282 18.2472C6.30396 18.2472 5.03692 17.983 3.95169 17.4546C2.86646 16.9205 2.02271 16.1762 1.42044 15.2216C0.818165 14.2671 0.517029 13.1534 0.517029 11.8807V0.545471H4.20737V11.5654C4.20737 12.2301 4.35226 12.821 4.64203 13.3381C4.93748 13.8551 5.35226 14.2614 5.88635 14.5568C6.42044 14.8523 7.0426 15 7.75282 15C8.46873 15 9.09089 14.8523 9.6193 14.5568C10.1534 14.2614 10.5653 13.8551 10.8551 13.3381C11.1506 12.821 11.2983 12.2301 11.2983 11.5654V0.545471Z" fill="#213053"/>
 <path d="M21.5152 0.545471V18H17.8248V0.545471H21.5152Z" fill="#213053"/>
@@ -14,15 +14,15 @@ const Footer = () => {
 <path d="M77.3085 18.2216C76.746 18.2216 76.2631 18.0227 75.8596 17.625C75.4619 17.2216 75.2631 16.7387 75.2631 16.1762C75.2631 15.6193 75.4619 15.1421 75.8596 14.7443C76.2631 14.3466 76.746 14.1477 77.3085 14.1477C77.854 14.1477 78.3312 14.3466 78.7403 14.7443C79.1494 15.1421 79.354 15.6193 79.354 16.1762C79.354 16.5512 79.2574 16.8949 79.0642 17.2074C78.8767 17.5142 78.6295 17.7614 78.3227 17.9489C78.0159 18.1307 77.6778 18.2216 77.3085 18.2216Z" fill="#213053"/>
 </svg>
 
-<span className=' block text-[17px] text-opacity-80 font-light mt-[40px] w-[351px] break-words'>
+<span className=' block text-[17px] text-opacity-80 font-light mt-[40px] w-[351px] break-words max-lg:w-full'>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit tincidunt id turpis est platea sed. 
 </span>
         </div>
 
-     <div className='flex flex-row justify-between flex-1'>
+     <div className='flex mt-14 flex-row justify-between flex-1 max-sm:flex-col max-sm:gap-y-[40px] max-sm:mt-[20px] max-lg:w-full'>
      <div className='sec-2'>
             <span className='text-[15px] text-opacity-40'>Company</span>
-            <ul className='flex flex-col gap-y-[20px] mt-[40px]'>
+            <ul className='flex flex-col gap-y-[20px] max-sm:gap-y-[10px] mt-[40px]'>
                 <li><a href='#' className='text-[17px] leading-[30px]'>Global location</a></li>
                 <li><a href='#' className='text-[17px] leading-[30px]'>Global location</a></li>
                 <li><a href='#' className='text-[17px] leading-[30px]'>Careers</a></li>

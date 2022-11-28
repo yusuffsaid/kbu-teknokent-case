@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import MenuItem from './MenuItem'
 
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const changeisOpen =()=>{
+        setIsOpen(!isOpen);
+    }
     const [menuItem, setMenuItem] = useState([
         {name:"About",order:1},
         {name:"All Shortcuts",order:2},
@@ -9,7 +13,7 @@ const Header = () => {
         {name:"Contact",order:4},
     ])
   return (
-    <div className='w-full flex px-[152px] py-[43px] justify-between justify-items-center'>
+    <div className='w-full flex px-[152px] py-[43px] justify-between justify-items-center shrink max-sm:px-[20px] max-lg:py-[24px]'>
         <div className='logo'>
         <svg width="72" height="18" viewBox="0 0 72 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.071 10.184C12.071 11.216 11.711 12.08 11.015 12.776C10.319 13.472 9.45503 13.808 8.42303 13.808C7.39103 13.808 6.50303 13.472 5.80703 12.776C5.11103 12.08 4.77503 11.216 4.77503 10.184V0.200012H0.983032V10.208C0.983032 12.224 1.70303 13.904 3.11903 15.272C4.53503 16.64 6.31103 17.312 8.42303 17.312C10.535 17.312 12.311 16.64 13.727 15.272C15.143 13.904 15.863 12.224 15.863 10.208V0.200012H12.071V10.184Z" fill="#213053"/>
@@ -21,12 +25,15 @@ const Header = () => {
 </svg>
 
         </div>
-        <ul className='flex justify-between  items-center gap-x-6 font-semibold text-[15px]'>
+        <ul className='flex justify-between  items-center gap-x-6 font-semibold text-[15px] max-lg:hidden'>
             {
                 menuItem.map((item,i)=>(<MenuItem name={item.name}></MenuItem>))
             }
             <li className="px-[52px] py-[8px] rounded-[65px] bg-active-color"><a>Get</a></li>
         </ul>
+
+       <button className='hidden max-lg:block' onClick={()=>changeisOpen()}><i className="fa-solid fa-bars"></i></button>
+
     </div>
   )
 }
